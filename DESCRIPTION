@@ -1,7 +1,7 @@
-Package: mauricer
+Package: mauriceronwindows
 Type: Package
-Title: Install 'BEAST2' Packages
-Version: 2.0.3
+Title: Run Mauricer On Windows
+Version: 0.1
 Author: Richèl J.C. Bilderbeek
 Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
 Description: 'BEAST2' (<http://www.beast2.org>) is a widely used
@@ -16,15 +16,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports:
-    beastier,
-    stringr
 Suggests:
-    beautier,
-    curl,
-    knitr,
-    rmarkdown,
-    testit,
-    testthat (>= 2.1.0)
 VignetteBuilder: knitr
 URL: https://github.com/ropensci/mauricer
 BugReports: https://github.com/ropensci/mauricer/issues

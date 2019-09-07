@@ -30,7 +30,8 @@ build_script:
   - # Rscript -e "source(\"R/get_default_beast2_folder.R\"); source(\"R/get_default_beast2_jar_path.R\"); source(\"R/check_os.R\"); print(get_default_beast2_jar_path())"
 
 test_script:
-  - travis-tool.sh run_tests
+  - Rscript scripts/mauricer_self_test.R
+  - # travis-tool.sh run_tests
 
 on_failure:
   - 7z a failure.zip *.Rcheck\*

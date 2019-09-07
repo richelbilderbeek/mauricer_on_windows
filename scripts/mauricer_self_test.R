@@ -28,7 +28,7 @@ print("---------------")
 print("Start self-test")
 print("---------------")
 
-print("NO SELF TEST YET")
+print(get_beast2_pkg_names())
 
 print("============================")
 print("Self-test of mauricer passed")

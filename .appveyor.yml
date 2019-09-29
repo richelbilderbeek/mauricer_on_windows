@@ -27,12 +27,11 @@ build_script:
   - travis-tool.sh install_github ropensci/beastier
   - travis-tool.sh install_github ropensci/mauricer
   - travis-tool.sh install_github ropensci/beautier
-  - travis-tool.sh install_r RCurl
+  - travis-tool.sh install_r curl
   - Rscript -e "beastier::install_beast2()"
 
 test_script:
   - Rscript scripts/mauricer_self_test.R
-  - # travis-tool.sh run_tests
 
 on_failure:
   - 7z a failure.zip *.Rcheck\*

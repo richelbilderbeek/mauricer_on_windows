@@ -1,35 +1,35 @@
 # mauricer self-testing script
 
-print("=====================")
-print("Self-testing mauricer")
-print("=====================")
+message("=====================")
+message("Self-testing mauricer")
+message("=====================")
 
 library(mauricer)
 
-print("------------")
-print("Session info")
-print("------------")
+message("------------")
+message("Session info")
+message("------------")
 
-print(sessionInfo())
+message(sessionInfo())
 
-print("--------------------------")
-print("mauricer's package version")
-print("--------------------------")
+message("--------------------------")
+message("mauricer's package version")
+message("--------------------------")
 
-print(packageVersion("mauricer"))
+message(packageVersion("mauricer"))
 
-print("--------------------------")
-print("Show functions in package ")
-print("--------------------------")
+message("--------------------------")
+message("Show functions in package ")
+message("--------------------------")
 
-print(lsf.str("package:mauricer"))
+message(lsf.str("package:mauricer"))
 
-print("---------------")
-print("Start self-test")
-print("---------------")
+message("---------------")
+message("Start self-test")
+message("---------------")
 
-print(get_beast2_pkg_names())
+message(get_beast2_pkg_names())
 
-print("============================")
-print("Self-test of mauricer passed")
-print("============================")
+message("============================")
+message("Self-test of mauricer passed")
+message("============================")

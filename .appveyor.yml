@@ -22,10 +22,7 @@ environment:
     USE_RTOOLS: true
 
 build_script:
-  - travis-tool.sh install_github ropensci/beautier
-  - travis-tool.sh install_github ropensci/tracerer
-  - travis-tool.sh install_github ropensci/beastier
-  - travis-tool.sh install_github ropensci/mauricer
+  - travis-tool.sh install_deps
   - travis-tool.sh install_r curl
   - Rscript -e "beastier::install_beast2()"
 
